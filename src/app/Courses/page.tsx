@@ -1,6 +1,11 @@
 
 import React from 'react';
 import Image from "next/image";
+import CourseImage1 from "../../../public/programming_fundamentals.jpg";
+import CourseImage2 from"../../../public/nextjs.jpg";
+import CourseImage3 from"../../../public/earn_as_your_learn.jpg";
+import CourseImage4 from"../../../public/cloudComputing.jpg";
+
 
 const Courses = () => {
   return (
@@ -13,7 +18,7 @@ const Courses = () => {
         <div className=" h-[240px] w-[250px] rounded-md flex flex-col items-center hover:bg-gray-200 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <div className="w-full flex justify-center p-2">
             <Image 
-              src={require("../../../public/programming_fundamentals.jpg")}
+              src={CourseImage1}
               alt="Course Image" 
               width={250} 
               height={250} 
@@ -27,7 +32,7 @@ const Courses = () => {
         <div className="bg-gray-100 h-[240px] w-[250px] rounded-md flex flex-col items-center hover:bg-gray-200 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <div className="w-full flex justify-center p-2">
             <Image 
-              src={require("../../../public/nextjs.jpg")}
+              src={CourseImage2}
               alt="Course Image" 
               width={250} 
               height={250} 
@@ -40,7 +45,7 @@ const Courses = () => {
         <div className="bg-gray-100 h-[240px] w-[250px] rounded-md flex flex-col items-center hover:bg-gray-200 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <div className="w-full flex justify-center p-2">
             <Image 
-              src={require("../../../public/earn_as_your_learn.jpg")}
+              src={CourseImage3}
               alt="Course Image" 
               width={250} 
               height={250} 
@@ -53,7 +58,7 @@ const Courses = () => {
         <div className="bg-gray-100 h-[240px] w-[250px] rounded-md flex flex-col items-center hover:bg-gray-200 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <div className="w-full flex justify-center p-2">
             <Image 
-              src={require("../../../public/cloudComputing.jpg")}
+              src={CourseImage4}
               alt="Course Image" 
               width={250} 
               height={250} 
