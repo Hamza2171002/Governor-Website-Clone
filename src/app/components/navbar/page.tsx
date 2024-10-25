@@ -31,7 +31,7 @@ const Navbar = () => {
         <ul className="hidden md:flex h-full items-center text-white md:space-x-4 lg:text-lg lg:space-x-8">
           <li>
             <Link
-              href="/Hero"
+              href="/"
               className="hover:text-[#b9d8f3] hover:border-b-2 transition-all duration-150"
             >
               Home
@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/Advance_Courses"
+              href="/Courses"
               className=" mx-5 hover:text-[#b9d8f3] hover:border-b-2 transition-all duration-150"
             >
               Courses
@@ -131,7 +131,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/Core-Courses"
+                href="/Courses"
                 className="hover:text-orange-500 transition-all duration-300 ease-in-out px-28 py-4 hover:bg-slate-600"
               >
                 Courses
