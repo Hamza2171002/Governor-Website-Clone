@@ -99,7 +99,7 @@ const Navbar = () => {
             </svg>
             <li>
               <Link
-                href="/Hero"
+                href="/"
                 className="hover:text-orange-500 transition-all duration-300 ease-in-out px-28 py-4 hover:bg-slate-600"
               >
                 Home
