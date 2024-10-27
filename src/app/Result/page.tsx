@@ -1,41 +1,33 @@
-import React from 'react';
-import Image from "next/image";
-import Result1 from "../../../public/imageWebsite.jpg";
-import Result2 from "../../../public/imageWebsite2.jpg";
-import Result3 from "../../../public/imageWebsite3.jpg";
+
 const Cards = () => {
   return (
-    <div className="flex gap-9 p-9 m-9">
-      <div className="flex justify-center items-center  h-[250px] w-[350px]  rounded-md md gap-2 flex-col" >
-      <Image 
-          src={Result1}
-          alt="GovernorSindhLogo" 
-          width={600} 
-          height={600} 
-        />
-        
-      </div>
-      <div className="flex justify-center items-center  h-[250px] w-[350px]  rounded-md md gap-2 flex-col" >
-      <Image 
-          src={Result2}
-          alt="GovernorSindhLogo" 
-          width={600} 
-          height={600} 
-        />
-      </div>
-      <div className="flex justify-center items-center  h-[250px] w-[350px]  rounded-md md gap-2 flex-col" >
-      <Image 
-          src={Result3}
-          alt="GovernorSindhLogo" 
-          width={600} 
-          height={600} 
-        />
-      </div>
-
-
+    <div className="from-container space-y-4 text-center">
+      <h2 className="form-heading font-bold">Exam Result</h2>
+      <form className="result-form items-center justify-center">
+        <div className="form-group ">
+          <label htmlFor="rollnumber text-sm font-medium leading-6 text-gray-900">Roll Number *</label>
+          <input 
+           type="text"
+           id="rollnumber"
+           placeholder="Roll Number"
+           className="border border-gray-300 p-2 rounded w-ful"
+           required
+            />
+        </div>
+        <div className="form-group  space-y-4">
+          <label htmlFor="cnic">CNIC or B-form Number *</label>
+          <input
+           type="text"
+           id="cnic"
+           placeholder="CNIC or B-form Number"
+           className="border border-gray-300 p-2 rounded w-ful"
+           required
+            />
+        </div>
       
-    
-      
+        <button type="button" className="submit-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Result</button>
+         
+      </form>
     </div>
   )
 }

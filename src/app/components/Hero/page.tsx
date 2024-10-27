@@ -1,7 +1,7 @@
 import Image from "next/image";
 import governor_house_image from "../../../../public/images.jpg";
 import Kamran_Tessori from "../../../../public/cover.png";
-const Hero_Section = () => {
+const Hero = () => {
   return (
     <div className="xl:flex overflow-hidden">
       <Image
@@ -19,16 +19,13 @@ const Hero_Section = () => {
         </p>
         <p className="text-2xl py-2">Earn up to $5,000 / month</p>
         <p className="text-2xl py-2 w-96">
-          Now admissions are open in Hyderabad
+          Now admissions are open in Karachi
         </p>
         <div className="sm:flex sm:space-x-10 py-4 space-y-4 sm:space-y-0">
           <button className="border-2 px-32 sm:px-11 py-4 rounded-3xl text-white bg-sky-900 sm:rounded-lg hover:translate-y-2 transform transition-all duration-300 text-sm sm:text-lg">
             APPLY NOW
           </button>
-          <div className="sm:px-11 text-center">
-            <h1 className="text-3xl ">562,143</h1>
-            <p>Accepted Applications</p>
-          </div>
+          
         </div>
       </div>
       <div className="my-20 xl:my-3">
@@ -40,7 +37,8 @@ const Hero_Section = () => {
         ></Image>
       </div>
     </div>
+    
   );
 };
 
-export default Hero_Section;
+export default Hero;

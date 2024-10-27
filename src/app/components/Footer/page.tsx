@@ -1,47 +1,64 @@
+import Link from "next/link";
+import { CiMail } from "react-icons/ci";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+
+
 
 const Footer = () => {
     return (
-      <div className="lg:flex px-10 lg:px-0 mt-12 bg-gray-200 w-full h-[600px] lg:h-[400px] justify-evenly py-14 space-y-8">
-        <div className="space-y-2 lg:text-lg">
-          <h1 className="font-bold xl:text-xl text-gray-800">Core Courses</h1>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Programing Fundamentals
-          </p>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Web 2 Using Next.js
-          </p>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Earn as You Learn
-          </p>
-        </div>
-        <div className="space-y-2 lg:text-lg">
-          <h1 className="font-bold xl:text-xl text-gray-800">Advanced Courses</h1>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Artificial Inteligence
-          </p>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Web 3 and Metaverse
-          </p>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Cloud Native Computing
-          </p>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Ambiant Computing and (IOT)
-          </p>
-          <p className="cursor-pointer w-[300px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Genomics and Bioinformatics
-          </p>
-          <p className="cursor-pointer w-[350px] h-8 hover:bg-gray-500 transition-all duration-200">
-            Network Programmability and Automation
-          </p>
-        </div>
-        <div className="space-y-2 lg:text-lg">
-          <h1 className="font-bold xl:text-xl text-gray-800">Social Links</h1>
-          <p className="cursor-pointer underline text-blue-600 hover:text-blue-800">
-            education@governorsindh.com
-          </p>
-        </div>
+      <footer className=" bg-[#F4F4F5]">
+      <div className="flex justify-evenly h-[25rem]  ">
+        <ul className="mt-[70px] font-bold cursor-pointer">
+          <p className=" text-blue-500">Core Courses</p>
+          <a className="block">Programming Fundamentals</a>
+          <a className="block">Web2 Using NextJS</a>
+          <a className="block">Earn as You Learn</a>
+        </ul>
+        <ul className="mt-[70px] font-bold cursor-pointer">
+          <p className=" text-blue-500">Advanced Courses</p>
+          <a className="block">Web 3 and Metaverse</a>
+          <a className="block">Cloud-Native Computing</a>
+          <a className="block">
+            Artificial Intelligence (AI) and Deep Learning
+          </a>
+          <a className="block">Ambient Computing and IoT</a>
+          <a className="block">Genomics and Bioinformatics</a>
+          <a className="block">Network Programmability and Automation</a>
+        </ul>
+        <ul className="mt-[70px] ">
+          <p>Social Links</p>
+          <ul className="flex gap-4">
+            <Link href={"/"} className="a">
+              <FaFacebook className="icon1 text-blue-700 bg-white  rounded-full inline-flex text-[28px] " />
+            </Link>
+            <Link href={"/"}>
+              <FaYoutube className=" icon2  text-white p-1 bg-red-600 rounded-full inline-flex  text-[28px]  " />
+            </Link>
+            <Link href={"/"}>
+              <FaTwitter className="icon3  text-white bg-sky-500 p-1 rounded-full inline-flex   text-[28px]  " />
+            </Link>
+            <Link href={"/"}>
+              <FaInstagram className="icon4  text-white p-1 bg-pink-500 rounded-full inline-flex  text-[28px] " />
+            </Link>
+            <Link href={"/"}>
+              <FaTiktok className="icon5  text-white rounded-full bg-black inline-flex p-1 text-[28px]  " />
+            </Link>
+          </ul>
+
+          <div className="mt-5">
+            <a>
+              <CiMail className="inline-flex text-2xl" /> education@governorsindh.com
+            </a>
+          </div>
+        </ul>
       </div>
+    </footer>
     );
   };
   
